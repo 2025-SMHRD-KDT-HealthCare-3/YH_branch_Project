@@ -7,7 +7,7 @@ const Review = () => {
       <ul>
         <li>1. git add . (변경사항 담기)</li>
         <li>2. git commit -m "메시지" (기록 생성)</li>
-        <li>3. git push origin main (GitHub 업로드)</li>
+        <li>3. git push origin 브랜치명 (GitHub 업로드)</li>
       </ul>
       <p>※ 처음에 연결할 때는 git remote add origin [주소] 잊지 말기!</p>
     </div>

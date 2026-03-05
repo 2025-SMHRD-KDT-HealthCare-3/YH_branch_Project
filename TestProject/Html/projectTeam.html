@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>프로젝트 역할 분담</h1>
     <h2>팀원1 OOO</h2>
     <h2>팀원2 OOO</h2>
     <h3>팀원3 OOO</h3>
     <h4>팀원4 OOO</h4>
+
+    <h2>U = Unmerged</h2>
+    <li>커밋 상태 표시에서 보이는 U 는 보통 Unmerged (병합 충돌 상태) 를 의미</li>
+    <li>머지(merge) 과정에서 충돌(conflict)이 발생해서 아직 해결되지 않은 파일</li>
+    <li>같은 작업 중 같은 파일의 같은 부분을 서로 다르게 수정했을 때 발생</li>
+    <li> 1. 충돌난 파일
+        HEAD 현재 브랜치 코드=======병합해온 브랜치 코드 branch-name
+    </li>
+    <li> 2. 원하는 코드로 수정</li>
+    <li> 3. 수정 후 스테이징
+        git add 파일명
+    </li>
+    <li> 4. 커밋
+        git commit
+    </li>
+    <br>
+    <h2>M = Modified</h2>
+    <li>Modified (수정됨) 을 의미</li>
+    <li>이미 Git이 추적하고 있는 파일이 수정된 상태</li>
+    <li>파일을 수정했지만 아직 커밋되지 않은 상태</li>
+    <li>1. 수정 내용을 커밋하기
+        git add 파일명
+        git commit -m "수정 내용 설명"
+    </li>
+    <li>2. 수정 내용을 취소하기 (원래 상태로 복구) = 수정 내용이 필요없어서 되돌릴 경우
+        git restore 파일명
+    </li>
+    <li>3. 수정 내용을 잠시 보관하기 (지금 수정한 것을 커밋은 안 하고 잠시 치워둘 때)
+        git stash
+    </li>
+    <br>
+    <h2>A = Added</h2>
+    <li>A 는 Added (추가됨) 을 의미</li>
+    <li>git add를 해서 커밋 준비가 된 상태</li>
+    <li>같은 작업 중 같은 파일의 같은 부분을 서로 다르게 수정했을 때 발생</li>
+
 </body>
+
 </html>

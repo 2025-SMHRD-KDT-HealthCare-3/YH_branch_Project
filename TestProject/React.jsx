@@ -3,10 +3,11 @@ import { useState } from 'react'
 
 const react = () => {
 
-    const [num,setNum] = useState()
+    const [num,setNum] = useState(0)
+        setNum +1 
 
-  return (
-    <div>react</div>
+return (
+    <div>{num}</div>
   )
 }
 
